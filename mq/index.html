@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .mydiv{
+        height: 500px;
+        width: 500px;
+        background-color: blue;
+        display: flex;
+        flex-direction: row;
+    }
+    .innerdiv{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin: 10px 20px;
+    }
+    @media screen and (max-width:540px){
+        .mydiv{
+            background-color: yellow;
+            /* below 540 pixel the color will be yellow(if you shrink it) */
+            flex-direction: column;
+
+        }
+    }
+    @media screen and (min-width:851px){
+        .mydiv{
+            background-color: purple;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="mydiv"><div class="innerdiv"></div>
+    <div class="innerdiv"></div>
+    <div class="innerdiv"></div>
+    </div>
+</body>
+</html>
