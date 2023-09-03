@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            "firt_name": "Mike",
+            "last_name": "Fourty",
+            "age": 26,
+            "locations": ["Nrb", "Nndi", "Mbsa", "Ktl"],
+            "kins": [{
+                    "name": "Mary",
+                    "phone": "0711098"
+                },
+                {
+                    "name": "Tom",
+                    "phone": "0711098"
+                }
+            ]
+        }
+        console.log(person)
+        console.log(person["last_name"])
+        console.log(person["locations"])
+
+        // Display kitale
+        console.log(person["locations"][3])
+
+        // Display kitale
+        console.log(person["kins"][1]["phone"])
+        // 1. Create an object that holds voter details for 
+        // all voters in Kenya in IEBC
+        // 2. Ensure name,county,sub-county, are stored for each voter.
+        // 3. Add least 3 voters in your objects
+
+        let deta = {
+            "31234565": {
+                "name": "Mike First",
+                "county": "Nairobi",
+                "sub-county": "Langata"
+            },
+
+            "31034565": {
+                "name": "Alfred second",
+                "county": "Migori",
+                "sub-county": "Rongo",
+            },
+
+            "30934565": {
+                "name": "John Third",
+                "county": "Kajiado",
+                "sub-county": "kitengela"
+            }
+        }
+        console.log(deta[31034565])
+    </script>
+</body>
+
+</html>

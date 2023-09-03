@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="countries.js"></script>
+    <script>
+        let population1 = [];
+        let population2 = [];
+        let population3 = [];
+        for (i = 0; i < countries.length; i++) {
+            if (countries[i]["population"] < 50000000) {
+                population1.push(countries[i]["population"])
+
+            } else if (countries[i]["population"] > 50000000 && countries[i]["population"] < 100000000) {
+
+                population2.push(countries[i]["population"])
+            } else if (countries[i]["population"] > 100000000) {
+
+                population3.push(countries[i]["population"])
+            }
+
+        }
+        let popltn = {
+            "0-50m":population1.length,
+            "50m-100m":population2.length,
+            "<100m":population3.length
+
+        }
+        console.log(popltn)
+    </script>
+</body>
+
+</html>

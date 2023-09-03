@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = 3
+
+        if (num1 % 2 === 0) {
+            console.log("even")
+        } else if (num1 %= 5) {
+            console.log("odd")
+        };
+
+        let val1 = 50;
+        let val2 = 45;
+        let val3 = 48;
+        let val4 = 55;
+
+        if (val1 > val2 && val1 > val3 && val1 > val4) {
+            console.log("val1")
+        } else if (val2 < val1 && val2 > val3 && val2 > val4) {
+            console.log("val2")
+        } else if (val3 > val1 && val3 > val2 && val3 > val4) {
+            console.log("val3")
+        } else {
+            console.log("val4")
+        };
+
+
+        let year = 2004;
+
+
+        // if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+        // console.log("leap year.");
+        // } else {
+        // console.log("not a leap year.");
+        // }
+        if (year % 4 === 0) {
+            if (year % 100 === 0) {
+                if (year % 100 === 0) {
+
+                    console.log('the year is a leap year')
+                
+
+                    
+            } else {
+                console.log('the year is a not leap year')
+            }
+        } else {
+            console.log('the year is a leap year')
+        }
+        } else {
+            console.log('the year is a leap year')
+        }
+    </script>
+</body>
+
+</html>
